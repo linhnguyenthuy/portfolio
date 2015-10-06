@@ -13,7 +13,13 @@ html = """<!DOCTYPE html>
 <body>
 	<!DOCTYPE html>
 <body>
-	<i><b><h1> Bienvenue sur mon site </h1></b></i>
+<style>
+h1
+{
+color:red;
+}
+</style>
+	<h1>Bienvenue sur mon site</h1>
 <form method="POST" action="/formulaire.py">
 <legend>Inscription</legend>
 <input type="text" name="nom" placeholder="Nom"  />
@@ -23,6 +29,9 @@ html = """<!DOCTYPE html>
 <input type="text" password="mot de passe" placeholder="Mot de passe" />
 <br />
 <input type="submit" class="btn btn-primary" value="Valider" />
+<background-image>
+<img src="/image/callout.jpg" />
+</background-image>
 </form>
 </body>
 </html>
